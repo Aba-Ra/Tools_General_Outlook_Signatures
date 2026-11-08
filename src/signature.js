@@ -1,3 +1,4 @@
+// Copyright (c) 2026 Matertec Pty Ltd. All rights reserved. See LICENSE.
 const domain = "matertec.com";
 export const normalise = value => typeof value === "string" ? value.trim().toLowerCase() : "";
 export function isEmployee(address) {

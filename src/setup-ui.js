@@ -1,3 +1,4 @@
+// Copyright (c) 2026 Matertec Pty Ltd. All rights reserved. See LICENSE.
 // This screen connects only the signed-in person's profile, on their click.
 export function mountSetup({office, readProfile, isConfigured, render, document}) {
   const button = document.getElementById('connect');

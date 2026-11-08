@@ -1,3 +1,4 @@
+/* Copyright (c) 2026 Matertec Pty Ltd. All rights reserved. See LICENSE.txt. */
 /* Matertec personal-signature pilot. No mailbox-body reads, storage or telemetry. */
 (function () {
   "use strict";

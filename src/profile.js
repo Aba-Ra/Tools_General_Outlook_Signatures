@@ -1,3 +1,4 @@
+// Copyright (c) 2026 Matertec Pty Ltd. All rights reserved. See LICENSE.
 import { createNestablePublicClientApplication } from "@azure/msal-browser";
 import { config } from "./config.js";
 import { createProfileReader, configured } from "./profile-client.js";

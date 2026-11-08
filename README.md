@@ -54,3 +54,9 @@ Open a received email in Outlook, choose Apps, then Matertec Signatures (older c
 The owner clarified that the product is a Matertec employee-signature tool, not a personally named app. Public screens now say Company email signatures and Designed by Matertec Pty Ltd, use admin@matertec.com for help, and describe automatic Outlook signatures using each employee's own work profile. Version 1.4.0.0 updates the name/description and setup command label without changing the app ID, permissions or runtime. Employee names still belong in their own generated email signatures; approved shared-role contact details are unchanged.
 
 This is company-wide product branding and capability, not proof of tenant-wide deployment. The last verified effective assignment is still Aba only. Enable approved everyday employee accounts through Microsoft administration; exclude administrator and emergency identities. Actual phone/classic Windows acceptance remains open. Do not replace the individual profile reader with Aba's fixed signature or use the technical-account all@ group for rollout.
+
+## Ownership and commercial licensing
+
+Copyright (c) 2026 Matertec Pty Ltd. All rights reserved for Matertec-owned material. Matertec Signatures is proprietary; external commercial use requires a separate written licence. See [LICENSE](LICENSE) and the public [ownership notice](https://aba-ra.github.io/Tools_General_Outlook_Signatures/legal.html).
+
+Microsoft MSAL and other third-party components retain their own ownership and licence terms. Full notices are in [THIRD_PARTY_NOTICES.txt](THIRD_PARTY_NOTICES.txt), also distributed beside the public app. No third-party code is claimed as Matertec-owned. A copyright notice records the intended rights position; contributor/artwork assignments and customer terms remain separate commercial-readiness evidence.
