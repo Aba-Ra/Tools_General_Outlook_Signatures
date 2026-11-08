@@ -7,7 +7,7 @@
   <IconUrl DefaultValue="https://aba-ra.github.io/matertec-outlook-signatures/icon-64.png"/>
   <HighResolutionIconUrl DefaultValue="https://aba-ra.github.io/matertec-outlook-signatures/icon-128.png"/>
   <SupportUrl DefaultValue="https://aba-ra.github.io/matertec-outlook-signatures/index.html"/>
-  <AppDomains><AppDomain>https://matertec.com</AppDomain></AppDomains>
+  <AppDomains><AppDomain>https://aba-ra.github.io</AppDomain></AppDomains>
   <Hosts><Host Name="Mailbox"/></Hosts>
   <Requirements><Sets DefaultMinVersion="1.1"><Set Name="Mailbox"/></Sets></Requirements>
   <FormSettings><Form xsi:type="ItemRead"><DesktopSettings><SourceLocation DefaultValue="https://aba-ra.github.io/matertec-outlook-signatures/index.html"/><RequestedHeight>250</RequestedHeight></DesktopSettings></Form></FormSettings>

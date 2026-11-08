@@ -1,0 +1,16 @@
+name: Check signature pilot
+on: [pull_request, push]
+permissions:
+  contents: read
+jobs:
+  signature-checks:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: node --test tests/runtime.test.cjs
