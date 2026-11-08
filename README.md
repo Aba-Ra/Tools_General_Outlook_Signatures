@@ -16,7 +16,7 @@ The Microsoft Entra registration is single tenant Matertec, client ID d609b965-7
 
 ## Build and validate
 
-Run `npm ci --ignore-scripts`, `npm test`, `npm run build`. Commit the matching employee bundles. The 34 checks include the unchanged original fixed-template runtime regressions, 18 employee profile, identity, escaping and event-race checks, and two browser-timer receiver regressions. Manifest validation and passing mocks do not prove execution in Outlook. See [deployment instructions](deployment/README.md) for exact configuration, origin trust, classic-Windows root allowlist, web/phone acceptance and rollback.
+Run `npm ci --ignore-scripts`, `npm test`, `npm run build`. Commit the matching employee bundles. The 38 checks include the unchanged original fixed-template runtime regressions, 18 employee profile, identity, escaping and event-race checks, two browser-timer receiver regressions, and four setup-state regressions. Manifest validation and passing mocks do not prove execution in Outlook. See [deployment instructions](deployment/README.md) for exact configuration, origin trust, classic-Windows root allowlist, web/phone acceptance and rollback.
 
 ### Live debugging status — 2026-11-08
 
@@ -43,3 +43,8 @@ Owner accepted the recommended repository name **Tools_General_Outlook_Signature
 The new small app icon combines a Matertec-inspired monogram on a dark navy rounded tile with a soft blue envelope badge. High-resolution source: docs/brand/matertec-signatures-icon-v1.png; Outlook delivery sizes: 64px and 128px. This is new tool artwork derived from the supplied Matertec mark, not an alteration of the approved company signature logo. The email signature still uses the unchanged approved PNG on matertec.com.
 
 The owner accepted the app icon and requested vault/marketing filing on 2026-11-08. Official artwork masters are now in the company vault under Brand Assets/Matertec Signatures; the vault brand-assets.json records checksums and this repository's corresponding copies. The Marketing/Templates/Matertec_Signatures_App_Icon_v1 pack provides identical reusable artwork. The approved company logo and signature template are unchanged.
+
+
+### Friendly setup screen — 2026-11-08
+
+Open a received email in Outlook, choose Apps, then Matertec Signatures (older cached clients can still show Matertec Reply Signature Pilot). The setup command is on the read-message surface. The screen uses the approved envelope app icon, shows your signed-in work address and connection progress, and provides an escaped personal preview plus a clear test step. Profile access begins only after pressing Connect my work details; refresh failures clear stale previews. The same page gives useful opening instructions outside Outlook. The 340px layout was visually checked without horizontal page overflow. No employee rollout or signature-template change is included.
