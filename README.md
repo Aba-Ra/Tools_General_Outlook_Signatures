@@ -1,4 +1,4 @@
-# Matertec Signatures
+# UnifiedSignatures
 
 Single-purpose internal tool in the existing Tools_General repository category. The Outlook signature add-in uses the approved Matertec logo/template and each employee’s own Microsoft 365 work details.
 
@@ -38,16 +38,16 @@ GitHub Pages publishes docs/ from main. This public repository contains only pub
 
 ## App identity and artwork
 
-Owner accepted the recommended repository name **Tools_General_Outlook_Signatures** and Outlook display name **Matertec Signatures** on 2026-11-08 after review of the existing repository categories. This is an internal utility, not a registered Matertec platform module. Module naming rule A-03 does not determine this utility's category. The previous repository name matertec-tools is superseded.
+Owner accepted the recommended repository name **Tools_General_Outlook_Signatures** and Outlook display name **UnifiedSignatures** on 2026-11-08 after review of the existing repository categories. This is an internal utility, not a registered Matertec platform module. Module naming rule A-03 does not determine this utility's category. The previous repository name matertec-tools is superseded.
 
 The new small app icon combines a Matertec-inspired monogram on a dark navy rounded tile with a soft blue envelope badge. High-resolution source: docs/brand/matertec-signatures-icon-v1.png; Outlook delivery sizes: 64px and 128px. This is new tool artwork derived from the supplied Matertec mark, not an alteration of the approved company signature logo. The email signature still uses the unchanged approved PNG on matertec.com.
 
-The owner accepted the app icon and requested vault/marketing filing on 2026-11-08. Official artwork masters are now in the company vault under Brand Assets/Matertec Signatures; the vault brand-assets.json records checksums and this repository's corresponding copies. The Marketing/Templates/Matertec_Signatures_App_Icon_v1 pack provides identical reusable artwork. The approved company logo and signature template are unchanged.
+The owner accepted the app icon and requested vault/marketing filing on 2026-11-08. Official artwork masters are now in the company vault under Brand Assets/UnifiedSignatures; the vault brand-assets.json records checksums and this repository's corresponding copies. The Marketing/Templates/Matertec_Signatures_App_Icon_v1 pack provides identical reusable artwork. The approved company logo and signature template are unchanged.
 
 
 ### Friendly setup screen — 2026-11-08
 
-Open a received email in Outlook, choose Apps, then Matertec Signatures (older cached clients can still show Matertec Reply Signature Pilot). The setup command is on the read-message surface. The screen uses the approved envelope app icon, shows your signed-in work address and connection progress, and provides an escaped personal preview plus a clear test step. Profile access begins only after pressing Connect my work details; refresh failures clear stale previews. The same page gives useful opening instructions outside Outlook. The 340px layout was visually checked without horizontal page overflow. No employee rollout or signature-template change is included.
+Open a received email in Outlook, choose Apps, then UnifiedSignatures (older cached clients can still show Matertec Reply Signature Pilot). The setup command is on the read-message surface. The screen uses the approved envelope app icon, shows your signed-in work address and connection progress, and provides an escaped personal preview plus a clear test step. Profile access begins only after pressing Connect my work details; refresh failures clear stale previews. The same page gives useful opening instructions outside Outlook. The 340px layout was visually checked without horizontal page overflow. No employee rollout or signature-template change is included.
 
 ### Company-wide product identity — 2026-11-08
 
@@ -57,7 +57,7 @@ This is company-wide product branding and capability, not proof of tenant-wide d
 
 ## Ownership and commercial licensing
 
-Copyright (c) 2026 Matertec Pty Ltd. All rights reserved for Matertec-owned material. Matertec Signatures is proprietary; external commercial use requires a separate written licence. See [LICENSE](LICENSE) and the public [ownership notice](https://aba-ra.github.io/Tools_General_Outlook_Signatures/legal.html).
+Copyright (c) 2026 Matertec Pty Ltd. All rights reserved for Matertec-owned material. UnifiedSignatures is proprietary; external commercial use requires a separate written licence. See [LICENSE](LICENSE) and the public [ownership notice](https://aba-ra.github.io/Tools_General_Outlook_Signatures/legal.html).
 
 Microsoft MSAL and other third-party components retain their own ownership and licence terms. Full notices are in [THIRD_PARTY_NOTICES.txt](THIRD_PARTY_NOTICES.txt), also distributed beside the public app. No third-party code is claimed as Matertec-owned. A copyright notice records the intended rights position; contributor/artwork assignments and customer terms remain separate commercial-readiness evidence.
 
