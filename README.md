@@ -48,3 +48,9 @@ The owner accepted the app icon and requested vault/marketing filing on 2026-11-
 ### Friendly setup screen — 2026-11-08
 
 Open a received email in Outlook, choose Apps, then Matertec Signatures (older cached clients can still show Matertec Reply Signature Pilot). The setup command is on the read-message surface. The screen uses the approved envelope app icon, shows your signed-in work address and connection progress, and provides an escaped personal preview plus a clear test step. Profile access begins only after pressing Connect my work details; refresh failures clear stale previews. The same page gives useful opening instructions outside Outlook. The 340px layout was visually checked without horizontal page overflow. No employee rollout or signature-template change is included.
+
+### Company-wide product identity — 2026-11-08
+
+The owner clarified that the product is a Matertec employee-signature tool, not a personally named app. Public screens now say Company email signatures and Designed by Matertec Pty Ltd, use admin@matertec.com for help, and describe automatic Outlook signatures using each employee's own work profile. Version 1.4.0.0 updates the name/description and setup command label without changing the app ID, permissions or runtime. Employee names still belong in their own generated email signatures; approved shared-role contact details are unchanged.
+
+This is company-wide product branding and capability, not proof of tenant-wide deployment. The last verified effective assignment is still Aba only. Enable approved everyday employee accounts through Microsoft administration; exclude administrator and emergency identities. Actual phone/classic Windows acceptance remains open. Do not replace the individual profile reader with Aba's fixed signature or use the technical-account all@ group for rollout.
