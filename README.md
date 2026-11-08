@@ -60,3 +60,7 @@ This is company-wide product branding and capability, not proof of tenant-wide d
 Copyright (c) 2026 Matertec Pty Ltd. All rights reserved for Matertec-owned material. Matertec Signatures is proprietary; external commercial use requires a separate written licence. See [LICENSE](LICENSE) and the public [ownership notice](https://aba-ra.github.io/Tools_General_Outlook_Signatures/legal.html).
 
 Microsoft MSAL and other third-party components retain their own ownership and licence terms. Full notices are in [THIRD_PARTY_NOTICES.txt](THIRD_PARTY_NOTICES.txt), also distributed beside the public app. No third-party code is claimed as Matertec-owned. A copyright notice records the intended rights position; contributor/artwork assignments and customer terms remain separate commercial-readiness evidence.
+
+## Contact routing
+
+Use **info@matertec.com** for licensing, external enquiries and questions. **admin@matertec.com** is reserved for internal company administration. Technical Microsoft tenant administration continues through the separately named administrator account; this contact policy does not change mailbox permissions or sender mappings.
