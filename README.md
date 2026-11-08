@@ -1,6 +1,6 @@
 # Matertec Signatures
 
-Single-purpose internal tool in the existing Tools_General repository category. The Outlook signature add-in uses with the approved Matertec logo/template and employee-specific Microsoft 365 work details.
+Single-purpose internal tool in the existing Tools_General repository category. The Outlook signature add-in uses the approved Matertec logo/template and each employee’s own Microsoft 365 work details.
 
 - Source: https://github.com/Aba-Ra/Tools_General_Outlook_Signatures
 - Static site: https://aba-ra.github.io/Tools_General_Outlook_Signatures/
@@ -25,3 +25,5 @@ GitHub Pages publishes docs/ from main. This public repository contains only pub
 Owner accepted the recommended repository name **Tools_General_Outlook_Signatures** and Outlook display name **Matertec Signatures** on 2026-11-08 after review of the existing repository categories. This is an internal utility, not a registered Matertec platform module. Module naming rule A-03 does not determine this utility's category. The previous repository name matertec-tools is superseded.
 
 The new small app icon combines a Matertec-inspired monogram on a dark navy rounded tile with a soft blue envelope badge. High-resolution source: docs/brand/matertec-signatures-icon-v1.png; Outlook delivery sizes: 64px and 128px. This is new tool artwork derived from the supplied Matertec mark, not an alteration of the approved company signature logo. The email signature still uses the unchanged approved PNG on matertec.com.
+
+The owner accepted the app icon and requested vault/marketing filing on 2026-11-08. Official artwork masters are now in the company vault under Brand Assets/Matertec Signatures; the vault brand-assets.json records checksums and this repository's corresponding copies. The Marketing/Templates/Matertec_Signatures_App_Icon_v1 pack provides identical reusable artwork. The approved company logo and signature template are unchanged.
