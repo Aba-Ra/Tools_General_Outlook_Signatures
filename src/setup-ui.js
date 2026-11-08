@@ -23,7 +23,7 @@ export function mountSetup({office, readProfile, isConfigured, render, document}
   button.disabled = true;
   if (!email) {
     if (account) account.textContent = 'Open this app inside Outlook to see your work account.';
-    show('In Outlook, open a received email, choose Apps, then Matertec Signatures. Your administrator must assign the app to you first.', 'Open in Outlook');
+    show('In Outlook, open a received email, choose Apps, then UnifiedSignatures. Your administrator must assign the app to you first.', 'Open in Outlook');
     return;
   }
   if (account) account.textContent = email;
