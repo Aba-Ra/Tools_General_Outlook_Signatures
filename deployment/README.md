@@ -1,5 +1,7 @@
 # Employee rollout checklist — not deployed
 
+Current identity: **UnifiedSignatures by Matertec**, selected 8 November 2026. Branding-only manifest version **1.4.1.0**. Canonical private development source is https://github.com/Aba-Ra/Matertec_apps_UnifiedSignatures . This public host and all installed routes remain unchanged. Customer setup features in private PR #7 are not included. Dated snapshots below retain their earlier deployment limits; use the current app guide for latest acceptance evidence.
+
 The installed v1.0 pilot remains assigned to aba.raha@matertec.com only. This branch stages v1.1 as a replacement with the same add-in ID, not a second concurrent add-in. Do not install both or assign everyone to bypass client verification.
 
 ## Microsoft connection
@@ -49,7 +51,7 @@ The predecessor matertec-outlook-signatures repository and host remain available
 
 ## Approved name and pilot status — 2026-11-08
 
-Owner accepted **Tools_General_Outlook_Signatures** as the single-purpose tool repository name and **UnifiedSignatures** as the Outlook name. Canonical host is https://aba-ra.github.io/Tools_General_Outlook_Signatures/; root manifest is version 1.3.0.0. Keep the same add-in ID and Entra registration. Email signature artwork remains unchanged; the new envelope-badge graphic is app-icon artwork only. Earlier matertec-tools names, version1.2 and exactly-one-Pages inventory are historical snapshots. The canonical and predecessor repositories are both Pages-enabled, both controlled by Aba-Ra; recheck their publishing access when it changes.
+Owner accepted **Tools_General_Outlook_Signatures** as the single-purpose tool repository name and **Matertec Signatures** as the earlier Outlook name, now superseded by UnifiedSignatures. Canonical host is https://aba-ra.github.io/Tools_General_Outlook_Signatures/; root manifest is version 1.3.0.0. Keep the same add-in ID and Entra registration. Email signature artwork remains unchanged; the new envelope-badge graphic is app-icon artwork only. Earlier matertec-tools names, version1.2 and exactly-one-Pages inventory are historical snapshots. The canonical and predecessor repositories are both Pages-enabled, both controlled by Aba-Ra; recheck their publishing access when it changes.
 
 Microsoft registered the single-tenant app and enterprise assignment contains only everyday Aba Raha. Final sign-in restriction requires assignment. User.Read own-profile consent and live Graph retrieval are still pending; do not report them enabled merely because the scope is configured. Outlook's app details continued to show version1.0 after the portal update, and its read-pane menu did not expose the new setup command. No add-in reply acceptance is claimed. Do not grant tenant-wide admin consent or relax the tenant's general consent policy to bypass this. Assignment-required apps may need principal-specific administrator consent; use the approved exact-user mechanism, or a bounded own-consent sequence followed by restoring assignment enforcement. Broader employee assignment is held.
 
