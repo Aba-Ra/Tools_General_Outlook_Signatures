@@ -1,1 +1,17 @@
-{"name":"matertec-tools","private":true,"type":"module","scripts":{"build":"node build.mjs","test":"node --test tests/*.test.cjs tests/*.test.mjs"},"dependencies":{"@azure/msal-browser":"5.29.0"},"devDependencies":{"esbuild":"0.28.2"}}
+{
+  "name": "matertec-tools",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node build.mjs",
+    "test": "node --test tests/*.test.cjs tests/*.test.mjs"
+  },
+  "dependencies": {
+    "@azure/msal-browser": "5.29.0"
+  },
+  "devDependencies": {
+    "esbuild": "0.28.2"
+  },
+  "author": "Matertec Pty Ltd",
+  "license": "UNLICENSED"
+}

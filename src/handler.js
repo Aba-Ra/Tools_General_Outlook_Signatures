@@ -1,3 +1,4 @@
+// Copyright (c) 2026 Matertec Pty Ltd. All rights reserved. See LICENSE.
 import { normalise, isEmployee, render, sharedSignature } from "./signature.js";
 export function makeHandler(Office, readProfile, timers = {
   setTimeout: (callback, delay) => setTimeout(callback, delay),

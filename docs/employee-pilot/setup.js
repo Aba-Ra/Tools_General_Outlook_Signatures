@@ -1,3 +1,4 @@
+/*! Copyright (c) 2026 Matertec Pty Ltd. All rights reserved. Third-party components: see THIRD_PARTY_NOTICES.txt. */
 (() => {
   var __defProp = Object.defineProperty;
   var __export = (target, all) => {

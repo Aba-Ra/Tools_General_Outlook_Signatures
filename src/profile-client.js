@@ -1,3 +1,4 @@
+// Copyright (c) 2026 Matertec Pty Ltd. All rights reserved. See LICENSE.
 import { fromGraph, normalise, isEmployee } from "./signature.js";
 const guid = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
 export function configured(config) { return guid.test(config.tenantId) && guid.test(config.clientId); }

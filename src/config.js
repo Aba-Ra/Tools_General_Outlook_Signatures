@@ -1,3 +1,4 @@
+// Copyright (c) 2026 Matertec Pty Ltd. All rights reserved. See LICENSE.
 // Verified Matertec-only registration. Public identifiers; no client secret.
 export const config = Object.freeze({
   tenantId: "86cac6cd-042e-4643-b834-c86d5e75684a",
