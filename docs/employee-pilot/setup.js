@@ -17202,24 +17202,68 @@
     return reader(email, interactive);
   }
 
-  // src/setup.js
-  Office.onReady(() => {
-    const button = document.getElementById("connect"), status = document.getElementById("status");
-    button.disabled = !isConfigured();
-    if (!isConfigured()) status.textContent = "Employee profile connection is awaiting administrator setup. Your existing signatures are unchanged.";
+  // src/setup-ui.js
+  function mountSetup({ office, readProfile: readProfile2, isConfigured: isConfigured2, render: render2, document: document2 }) {
+    const button = document2.getElementById("connect");
+    const status = document2.getElementById("status");
+    const preview = document2.getElementById("preview");
+    const account = document2.getElementById("account");
+    const state = document2.getElementById("connection-state");
+    const empty = document2.getElementById("preview-empty");
+    const next = document2.getElementById("next-step");
+    const email = office?.context?.mailbox?.userProfile?.emailAddress;
+    const show = (message, label) => {
+      status.textContent = message;
+      if (state) state.textContent = label;
+    };
+    const clearPreview = () => {
+      preview.replaceChildren();
+      preview.hidden = true;
+      if (empty) empty.hidden = false;
+      if (next) next.hidden = true;
+    };
+    clearPreview();
+    button.disabled = true;
+    if (!email) {
+      if (account) account.textContent = "Open this app inside Outlook to see your work account.";
+      show("In Outlook, open a new email, choose Apps, then Matertec Signatures. Your administrator must assign the app to you first.", "Open in Outlook");
+      return;
+    }
+    if (account) account.textContent = email;
+    if (!isConfigured2()) {
+      show("Your administrator is finishing setup. Please check back before connecting your work details.", "Setup pending");
+      return;
+    }
+    show("Connect your work details to see your own signature preview.", "Ready to connect");
+    button.disabled = false;
     button.addEventListener("click", async () => {
+      if (button.disabled) return;
       button.disabled = true;
+      button.textContent = "Connecting\u2026";
+      button.setAttribute("aria-busy", "true");
+      clearPreview();
+      show("Connecting to your Microsoft work profile. Complete sign-in if Microsoft asks.", "Connecting");
       try {
-        const profile = await readProfile(Office.context.mailbox.userProfile.emailAddress, true);
-        status.textContent = "Your Microsoft 365 details are connected. Start a new message to test the signature.";
-        document.getElementById("preview").innerHTML = render(profile).html;
+        const profile = await readProfile2(email, true);
+        preview.innerHTML = render2(profile).html;
+        preview.hidden = false;
+        if (empty) empty.hidden = true;
+        if (next) next.hidden = false;
+        show("Your work details are connected. Start a new email and check the signature before sending.", "Work details connected");
+        button.textContent = "Refresh my work details";
       } catch (_) {
-        status.textContent = "Could not connect this employee profile. Check your work account and contact your administrator. No message was changed.";
+        clearPreview();
+        show("We could not connect your work details. Check that Outlook is using your company account, then try again. If it still fails, ask your administrator for help.", "Please try again");
+        button.textContent = "Try connecting again";
       } finally {
-        button.disabled = !isConfigured();
+        button.disabled = false;
+        button.removeAttribute("aria-busy");
       }
     });
-  });
+  }
+
+  // src/setup.js
+  Office.onReady(() => mountSetup({ office: Office, readProfile, isConfigured, render, document }));
 })();
 /*! Bundled license information:
 
