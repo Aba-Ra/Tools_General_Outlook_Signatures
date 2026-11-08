@@ -43,7 +43,10 @@
   }
 
   // src/handler.js
-  function makeHandler(Office2, readProfile2, timers = { setTimeout, clearTimeout }) {
+  function makeHandler(Office2, readProfile2, timers = {
+    setTimeout: (callback, delay2) => setTimeout(callback, delay2),
+    clearTimeout: (timer) => clearTimeout(timer)
+  }) {
     let generation = 0;
     const ok = (result) => result && result.status === Office2.AsyncResultStatus.Succeeded;
     return function applyMatertecSignature(event) {

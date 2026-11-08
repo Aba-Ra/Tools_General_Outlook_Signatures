@@ -1,5 +1,8 @@
 import { normalise, isEmployee, render, sharedSignature } from "./signature.js";
-export function makeHandler(Office, readProfile, timers = {setTimeout, clearTimeout}) {
+export function makeHandler(Office, readProfile, timers = {
+  setTimeout: (callback, delay) => setTimeout(callback, delay),
+  clearTimeout: timer => clearTimeout(timer)
+}) {
   let generation = 0;
   const ok = result => result && result.status === Office.AsyncResultStatus.Succeeded;
   return function applyMatertecSignature(event) {
